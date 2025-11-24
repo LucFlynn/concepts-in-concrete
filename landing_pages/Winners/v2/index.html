@@ -9,6 +9,17 @@
     })(window,document,'script','dataLayer','GTM-NXVR86G');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- PostHog Analytics -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Rr Mr fi Cr Ar ci Tr Fr capture Mi calculateEventProperties Lr register register_once register_for_session unregister unregister_for_session Hr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Ur jr createPersonProfile zr kr Br opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug M Nr getPageViewId captureTraceFeedback captureTraceMetric $r".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_GHsAzUwR4VtOazAjzlP1Oy3nBqKQ3gmq5f6CkkZfW8e', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2025-05-24',
+            person_profiles: 'identified_only'
+        })
+    </script>
+    <!-- End PostHog Analytics -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philadelphia's Most Trusted Commercial Epoxy Flooring Contractor | Concepts in Concrete</title>
@@ -45,7 +56,12 @@
                     <img src="images/logo.svg" alt="Concepts in Concrete" class="h-16 md:h-20">
                 </div>
                 <div class="flex items-center space-x-4">
-                    <a href="tel:2154025451" class="text-lg font-semibold text-blue-600 hover:text-blue-700">(215) 402-5451</a>
+                    <a href="tel:2154025451" class="flex items-center text-2xl md:text-3xl font-bold text-blue-600 hover:text-blue-700">
+                        <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                        </svg>
+                        (215) 402-5451
+                    </a>
                     <a href="#quote" class="bg-brand-green hover:bg-brand-green-light text-black px-4 py-2 rounded-lg font-medium transition-colors">
                         Get Free Assessment
                     </a>
@@ -55,36 +71,38 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-12 lg:py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="relative text-white py-12 lg:py-16 bg-gray-900">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="images/bg.jpg" alt="Commercial Flooring" class="w-full h-full object-cover">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
                 <!-- Hero Content -->
-                <div class="order-2 lg:order-1">
+                <div class="order-2 lg:order-1 bg-gray-900/75 backdrop-blur-sm p-6 rounded-lg">
                     <div class="bg-yellow-100 text-yellow-900 inline-block px-3 py-1 rounded-full text-sm font-semibold mb-4">
                         ✓ 4.9 STARS · 183 REVIEWS · TRUSTED BY AMAZON, SAM'S CLUB, COCA-COLA
                     </div>
 
                     <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 leading-tight">
-                        Philadelphia's Most Trusted Commercial Epoxy Flooring Contractor
+                        Custom Decorative Concrete Coatings
                     </h1>
 
-                    <p class="text-lg lg:text-xl mb-6 text-gray-300">
-                        Industrial-grade epoxy floors for warehouses, manufacturing facilities, and distribution centers—installed in 1-3 days with zero production shutdowns.
-                    </p>
-
+                   
                     <!-- Urgency Boxes -->
                     <div class="space-y-3 mb-6">
-                        <div class="bg-blue-900/50 border-l-4 border-blue-400 p-3 rounded">
+                        <div class="bg-blue-900/70 border-l-4 border-blue-400 p-3 rounded">
                             <p class="text-sm"><span class="text-lg mr-1">📅</span> <strong>Book your 2025 floor upgrade now</strong><br>
                             Q1 production schedules fill fast—most facilities book 2-3 months ahead</p>
                         </div>
 
-                        <div class="bg-green-900/50 border-l-4 border-green-400 p-3 rounded">
+                        <div class="bg-green-900/70 border-l-4 border-green-400 p-3 rounded">
                             <p class="text-sm"><span class="text-lg mr-1">⏱️</span> <strong>Weekend & after-hours installation available</strong><br>
                             Back in full production Monday morning—no lost shifts</p>
                         </div>
 
-                        <div class="bg-red-900/50 border-l-4 border-red-400 p-3 rounded">
+                        <div class="bg-red-900/70 border-l-4 border-red-400 p-3 rounded">
                             <p class="text-sm"><span class="text-lg mr-1">💰</span> <strong>Cracked floors cost you $1,000+/day in downtime</strong><br>
                             Forklift damage, safety hazards, failed inspections—we fix it fast</p>
                         </div>
@@ -108,6 +126,29 @@
                             <span>Laura coordinates everything—schedule flexibility guaranteed</span>
                         </li>
                     </ul>
+
+                    <!-- Google Reviews Badge -->
+                    <div class="inline-flex items-center bg-white px-6 py-3 rounded-lg shadow-md">
+                        <svg class="w-8 h-8 mr-3" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
+                            <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
+                            <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"/>
+                            <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/>
+                        </svg>
+                        <div>
+                            <div class="text-gray-900 font-bold text-lg leading-tight">183 Reviews</div>
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400 mr-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-semibold text-sm">4.9</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- FORM SECTION -->
@@ -133,7 +174,7 @@
 
                         <!-- STAGE 1 -->
                         <div id="stage1" class="space-y-4">
-                            <h3 class="text-2xl font-bold text-gray-900">Get Your Free Commercial Flooring Assessment</h3>
+                            <h3 class="text-2xl font-bold text-gray-900">Get Your Free Quote</h3>
                             <p class="text-gray-600 mb-4">Join Amazon, Sam's Club, Coca-Cola, and 180+ businesses who trust us</p>
 
                             <div class="grid grid-cols-2 gap-4">
@@ -146,7 +187,7 @@
                             <input type="tel" id="phone" name="phone" placeholder="Phone *" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-green focus:border-brand-green">
 
                             <button type="button" onclick="goToStage2()" class="w-full bg-brand-green hover:bg-brand-green-light text-black font-semibold py-3 px-6 rounded-lg transition-colors text-lg">
-                                Continue → Get My Quote
+                                Get My Free Quote
                             </button>
                         </div>
 
@@ -194,7 +235,7 @@
                         <input type="hidden" id="utm_term" name="utm_term" value="">
                         <input type="hidden" id="utm_content" name="utm_content" value="">
 
-                        <div class="text-xs text-gray-600 space-y-1 mt-4 pt-4 border-t border-gray-200">
+                        <div class="text-sm text-gray-700 space-y-2 mt-4 pt-4 border-t border-gray-200">
                             <p>✓ Laura will call you within 1 business day</p>
                             <p>✓ Free on-site assessment—no obligation</p>
                             <p>✓ We work around your production schedule</p>
@@ -202,9 +243,10 @@
                         </div>
                     </form>
 
-                    <div class="mt-4 text-center text-sm text-gray-600">
-                        Prefer to call? <a href="tel:2154025451" class="font-bold text-blue-600 hover:text-blue-700">(215) 402-5451</a><br>
-                        <span class="text-xs">Available M-F 8am-6pm, Sat 9am-2pm</span>
+                    <div class="mt-4 text-center text-gray-700">
+                        <p class="text-base mb-1">Prefer to call?</p>
+                        <a href="tel:2154025451" class="font-bold text-blue-600 hover:text-blue-700 text-xl">(215) 402-5451</a>
+                        <p class="text-sm mt-1">Available M-F 8am-6pm, Sat 9am-2pm</p>
                     </div>
                 </div>
             </div>
