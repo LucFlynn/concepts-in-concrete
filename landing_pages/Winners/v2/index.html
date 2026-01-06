@@ -228,6 +228,7 @@
                         </div>
 
                         <!-- Hidden tracking fields -->
+                        <input type="hidden" id="ip_address" name="ip_address" value="">
                         <input type="hidden" id="gclid" name="gclid" value="">
                         <input type="hidden" id="utm_source" name="utm_source" value="">
                         <input type="hidden" id="utm_medium" name="utm_medium" value="">
@@ -890,6 +891,16 @@
             if (utmCampaign) document.getElementById('utm_campaign').value = utmCampaign;
             if (utmTerm) document.getElementById('utm_term').value = utmTerm;
             if (utmContent) document.getElementById('utm_content').value = utmContent;
+
+            // Fetch IP address
+            fetch('https://api.ipify.org?format=json')
+                .then(function(response) { return response.json(); })
+                .then(function(data) {
+                    document.getElementById('ip_address').value = data.ip;
+                })
+                .catch(function(error) {
+                    console.log('Could not fetch IP address');
+                });
         })();
 
         // Step 1: Select project type and show details section
@@ -976,6 +987,7 @@
                 phone: document.getElementById('phone').value,
                 projectType: document.getElementById('projectType').value,
                 projectDetails: document.getElementById('projectDetails').value,
+                ip_address: document.getElementById('ip_address').value,
                 gclid: document.getElementById('gclid').value,
                 utm_source: document.getElementById('utm_source').value,
                 utm_medium: document.getElementById('utm_medium').value,
