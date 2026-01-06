@@ -228,6 +228,7 @@
                         </div>
 
                         <!-- Hidden tracking fields -->
+                        <input type="hidden" id="landing_page_url" name="landing_page_url" value="">
                         <input type="hidden" id="ip_address" name="ip_address" value="">
                         <input type="hidden" id="gclid" name="gclid" value="">
                         <input type="hidden" id="utm_source" name="utm_source" value="">
@@ -874,6 +875,9 @@
     <script>
         // Populate hidden tracking fields from URL parameters on page load
         (function() {
+            // Capture full landing page URL
+            document.getElementById('landing_page_url').value = window.location.href;
+
             var urlParams = new URLSearchParams(window.location.search);
 
             // Capture gclid and UTM parameters
@@ -987,6 +991,7 @@
                 phone: document.getElementById('phone').value,
                 projectType: document.getElementById('projectType').value,
                 projectDetails: document.getElementById('projectDetails').value,
+                landing_page_url: document.getElementById('landing_page_url').value,
                 ip_address: document.getElementById('ip_address').value,
                 gclid: document.getElementById('gclid').value,
                 utm_source: document.getElementById('utm_source').value,
